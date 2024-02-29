@@ -1,4 +1,3 @@
-import metadata_utils as mu
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
@@ -87,8 +86,8 @@ def main():
         text.append(new_body)
 
     #Write it
-    tree.write(f'amjewess_chopped.xml')
-    print("wrote amjewess_chopped.xml")
+    tree.write(f'amjewess_trimmed.xml')
+    print("wrote amjewess_trimmed.xml")
 
 if __name__ == "__main__":
     main()
